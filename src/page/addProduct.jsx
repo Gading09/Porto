@@ -13,6 +13,7 @@ class AddProduct extends React.Component{
     AddProductSeller = async () => {
         await this.props.AddProduct()
         alert("product successfully added !")
+        this.props.history.push('/')
     }
     render(){
         return(

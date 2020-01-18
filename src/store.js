@@ -613,5 +613,5 @@ export const actions = store => ({
                 // handle error
                 console.log(error)
             })
-        },
+        }
 })

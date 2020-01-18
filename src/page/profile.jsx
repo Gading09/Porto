@@ -8,9 +8,18 @@ import "../style/profile.css"
 import Navbar from "../component/navbar"
 
 class Profile extends React.Component{
-
     render(){
-        if (this.props.is_login==true){
+        const token = localStorage.getItem("token");
+        const username = localStorage.getItem("username");
+        const fullname = localStorage.getItem("fullname");
+        const phone = localStorage.getItem("phone_number");
+        const address = localStorage.getItem("address");
+        const email = localStorage.getItem("email");
+        const city = localStorage.getItem("city");
+        const image = localStorage.getItem("image");
+        const shop_name = localStorage.getItem("shop_name");
+
+        if (token!==null){
             return(
                 <nav>
                     <Navbar/>
@@ -21,11 +30,17 @@ class Profile extends React.Component{
                                 <img className="putih" src={require("../image/putih.png")} alt=""/>
                                 <img className="foto" src={require("../image/hedy.png")} alt=""/>
                                 <span className="username">Username</span>
+                                <span className="username-out">{username}</span>
                                 <span className="fullname">Fullname</span>
+                                <span className="fullname-out">{fullname}</span>
                                 <span className="address">Address</span>
+                                <span className="address-out">{address}</span>
                                 <span className="city">City</span>
+                                <span className="city-out">{city}</span>
                                 <span className="phone">Phone number</span>
+                                <span className="phone-out">{phone}</span>
                                 <span className="email">Email</span>
+                                <span className="email-out">{email}</span>
                             </div>
                         </div>
                     </div>
@@ -39,5 +54,5 @@ class Profile extends React.Component{
         }
     }
 }
-export default connect('is_login', actions
+export default connect('', actions
 )(withRouter(Profile));

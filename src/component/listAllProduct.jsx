@@ -11,7 +11,7 @@ import axios from 'axios';
 
 class ListAllProduct extends Component{
     addcart = async () => {
-       await this.props.addToCart()
+       await this.props.addToCart(this.props.id_produk1)
        alert("Add Cart succsess!")
     }
 

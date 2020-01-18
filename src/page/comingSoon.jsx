@@ -12,7 +12,7 @@ class ComingSoon extends React.Component{
     // class konstraktor untuk state lokal
     constructor() {
       super();
-      this.state = { time: {}, seconds: 5 };
+      this.state = { time: {}, seconds: 46500 };
       this.timer = 0;
       this.startTimer = this.startTimer.bind(this);
       this.countDown = this.countDown.bind(this);

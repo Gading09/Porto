@@ -73,3 +73,33 @@
     left: 800px;
     text-decoration: underline;
 }
+
+.profile .username-out{
+    top: 180px;
+    left: 510px;
+}
+
+.profile .fullname-out{
+    top: 270px;
+    left: 510px;
+}
+
+.profile .email-out{
+    top: 360px;
+    left: 510px;
+}
+
+.profile .phone-out{
+    top: 450px;
+    left: 510px;
+}
+
+.profile .address-out{
+    top: 180px;
+    left: 840px;
+}
+
+.profile .city-out{
+    top: 320px;
+    left: 840px;
+}

@@ -40,6 +40,7 @@ class SignUp extends React.Component{
         await this.props.getSignIn()
         const token = localStorage.getItem("token")
         await this.props.getProfileAgent(token)
+        alert("Sign Up Successful !")
         this.props.history.push('/')
     }
 

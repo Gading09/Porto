@@ -60,7 +60,7 @@ class Navbar extends Component{
                   }
                     
                     <li class="nav-item">
-                        <Link to="/blank" class="nav-link"> Post Article</Link>
+                        <Link to="/blank" class="nav-link"> Recipe Article </Link>
                     </li>
                 </ul>
                 {/* <Search {...this.props}/> */}

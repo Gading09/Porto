@@ -18,6 +18,8 @@ class SignUpSeller extends React.Component{
         await this.props.getSignIn()
         const token = localStorage.getItem("token")
         await this.props.getProfileSeller(token)
+        alert("Sign Up Successful !")
+        this.props.history.push('/')
     }
 
     render(){
