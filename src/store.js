@@ -67,7 +67,7 @@ export const actions = store => ({
         };
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/login?username="+username+"&password="+password
+            url: "http://localhost:5000/login?username="+username+"&password="+password
           };
           const self = this
           await axios(req)
@@ -95,7 +95,7 @@ export const actions = store => ({
         // console.log("tes",localStorage.getItem('token'))
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/user",
+            url: "http://localhost:5000/user",
             headers: {
                 Authorization: "Bearer " + localStorage.getItem("token")
               }
@@ -127,7 +127,7 @@ export const actions = store => ({
         // console.log("tes",localStorage.getItem('token'))
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/agent",
+            url: "http://localhost:5000/agent",
             headers: {
                 Authorization: "Bearer " + localStorage.getItem("token")
               }
@@ -159,7 +159,7 @@ export const actions = store => ({
         // console.log("tes",localStorage.getItem('token'))
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/seller",
+            url: "http://localhost:5000/seller",
             headers: {
                 Authorization: "Bearer " + localStorage.getItem("token")
               }
@@ -206,7 +206,7 @@ export const actions = store => ({
   
         const req = {
           method: "post",
-          url: "http://0.0.0.0:5000/user/registration",
+          url: "http://localhost:5000/user/registration",
           headers: {
             "Content-Type": "application/json"
           },
@@ -250,7 +250,7 @@ export const actions = store => ({
   
         const req = {
           method: "post",
-          url: "http://0.0.0.0:5000/agent/registration",
+          url: "http://localhost:5000/agent/registration",
           headers: {
             "Content-Type": "application/json"
           },
@@ -297,7 +297,7 @@ export const actions = store => ({
   
         const req = {
           method: "post",
-          url: "http://0.0.0.0:5000/seller/registration",
+          url: "http://localhost:5000/seller/registration",
           headers: {
             "Content-Type": "application/json"
           },
@@ -320,7 +320,7 @@ export const actions = store => ({
     Review : async (state) => {
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/review"
+            url: "http://localhost:5000/review"
           };
           const self = this
           await axios(req)
@@ -346,7 +346,7 @@ export const actions = store => ({
     RequestDataProduct : async (state) => {
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/public/product?p=1&rp=4"
+            url: "http://localhost:5000/public/product?p=1&rp=4"
           };
           const self = this
           await axios(req)
@@ -364,7 +364,7 @@ export const actions = store => ({
     RequestDataAllProduct : async (state) => {
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/public/product"
+            url: "http://localhost:5000/public/product"
             };
             const self = this
             await axios(req)
@@ -382,7 +382,7 @@ export const actions = store => ({
     GetCart : async (state) => {
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/cart",
+            url: "http://localhost:5000/cart",
             headers: {
                 Authorization: "Bearer " + localStorage.getItem("token")
                 }
@@ -409,7 +409,7 @@ export const actions = store => ({
         
         const req = {
             method: "get",
-            url: `http://0.0.0.0:5000/cart/detail/${id_cart}`,
+            url: `http://localhost:5000/cart/detail/${id_cart}`,
             headers: {
                 Authorization: "Bearer " + localStorage.getItem("token")
                 }
@@ -434,7 +434,7 @@ export const actions = store => ({
         // console.log("tes",localStorage.getItem('token'))
         const req = {
             method: "PUT",
-            url: "http://0.0.0.0:5000/user/cart/checkout",
+            url: "http://localhost:5000/user/cart/checkout",
             headers: {
                 Authorization: "Bearer " + localStorage.getItem("token")
                 }
@@ -456,7 +456,7 @@ export const actions = store => ({
     
         const req = {
             method: "post",
-            url: "http://0.0.0.0:5000/user/cart/transaction",
+            url: "http://localhost:5000/user/cart/transaction",
             headers: {
             Authorization: "Bearer " + localStorage.getItem("token")
             },
@@ -478,7 +478,7 @@ export const actions = store => ({
     ShowTransaction : async (state) => {
         const req = {
             method: "get",
-            url: "http://0.0.0.0:5000/user/transaction",
+            url: "http://localhost:5000/user/transaction",
             headers: {
                 Authorization: "Bearer " + localStorage.getItem("token")
                 }
@@ -524,7 +524,7 @@ export const actions = store => ({
     
         const req = {
             method: "post",
-            url: "http://0.0.0.0:5000/seller/product/create",
+            url: "http://localhost:5000/seller/product/create",
             headers: {
                 "Content-Type": "application/json",
                 Authorization: "Bearer " + localStorage.getItem("token")
@@ -551,7 +551,7 @@ export const actions = store => ({
   
         const req = {
           method: "post",
-          url: "http://0.0.0.0:5000/user/cart",
+          url: "http://localhost:5000/user/cart",
           headers: {
             "Content-Type": "application/json",
             Authorization: "Bearer " + localStorage.getItem("token")
@@ -575,7 +575,7 @@ export const actions = store => ({
     category : async (state) => {
         const req = {
             method: "get",
-            url:`http://0.0.0.0:5000/public/product?taste=${state.category_taste}&halal=${state.halalStatus}`
+            url:`http://localhost:5000/public/product?taste=${state.category_taste}&halal=${state.halalStatus}`
             };
             const self = this
             await axios(req)
@@ -596,7 +596,7 @@ export const actions = store => ({
     FiturSearch : async (state) => {
         const req = {
             method: "get",
-            url:`http://0.0.0.0:5000/public/product/search?keyword=${state.search}`
+            url:`http://localhost:5000/public/product/search?keyword=${state.search}`
             };
             const self = this
             await axios(req)
