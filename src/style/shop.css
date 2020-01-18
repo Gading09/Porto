@@ -1,0 +1,126 @@
+.product .image-product{
+    width: 100%;
+    height: 220px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px;
+}
+
+.product p{
+    margin-bottom: 0;
+}
+
+.product .name-product{
+    font-size: 18px;
+    display: inline;
+    font-family: 'pacifico', cursive;
+}
+.product .weight-product{
+    font-size: 12px;
+    font-style: italic;
+    margin-top: -2%;
+}
+
+.product .seller-product{
+    font-size: 14px;
+    padding-top: 5px;
+    font-family: 'Sniglet', cursive;
+    display: relative;
+}
+
+.product .rating-product{
+    font-size: 14px;
+    display: inline;
+    float: right;
+    padding-top: 4px;
+    margin-top:-8%;
+}
+
+.product .reference{
+    font-size: 13px;
+    font-style: italic;
+    display: inline;
+    font-family: 'pacifico', cursive;
+}
+
+.product .price{
+    font-size: 15px;
+    display: inline-block;
+    font-family: 'pacifico', cursive;
+}
+
+.product .stock-product{
+    font-size: 14px;
+    display: inline;
+    margin-top: -5%;
+    font-family: 'Sniglet', cursive;
+}
+.product .stock{
+    font-size: 14px;
+    display: inline;
+    font-family: 'Sniglet', cursive;
+}
+
+.product .title-rating{
+    display: inline;
+    float: right;
+    padding-top: 5px;
+    margin-right: 7px;
+    font-size: 14px;
+    font-family: 'caveat', cursive;
+}
+.product .name-product,
+.product .weight-product,
+.product .seller-product,
+.product .stock,
+.product .price{
+    padding-left: 10%;
+}
+
+.product .rating-product,
+.product .halal,
+.product .nohalal{
+    margin-right: 10%;
+}
+
+.product .halal{
+    width: 27%;
+    display: block;
+    margin-left: 67%;
+    margin-top: -23%;
+}
+
+.product .nohalal{
+    width: 25%;
+    display: block;
+    margin-left: 67%;
+    margin-top: -23%;
+}
+
+.product .add-to-cart{
+    display: block;
+    margin-left: 35%;
+    margin-top: 6%;
+}
+.product{
+    padding-left: 0;
+    padding-right: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    padding:20px;
+    padding-bottom: 30px;
+}
+.product .title-rating{
+    margin-right: 12%;
+}
+
+.perlu:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.star{
+    color: red;
+}

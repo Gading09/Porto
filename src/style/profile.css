@@ -1,0 +1,75 @@
+.profile{
+    padding-left: 0;
+    padding-right: 0;
+    height: 637px;
+}
+.profile .kayu{
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    webkit-filter: blur(1px);
+    filter: blur(1.4px);
+}
+
+.profile .putih{
+    position: relative;
+    border-radius: 90px;
+    margin-top: 4.5%;
+    margin-left: 4.6%;
+    width: 90%;
+    height: 520px;
+}
+
+.profile .foto{
+    position: absolute;
+    border-radius: 90px;
+    left: 100px;
+    top: 112px;
+    /* margin-top: 4.5%;
+    margin-left: 4.6%; */
+    width: 25%;
+    height: 400px;
+}
+
+.profile span{
+    position: absolute;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.profile .username{
+    top: 140px;
+    left: 470px;
+    text-decoration: underline;
+}
+
+.profile .fullname{
+    top: 230px;
+    left: 470px;
+    text-decoration: underline;
+}
+
+.profile .email{
+    top: 320px;
+    left: 470px;
+    text-decoration: underline;
+}
+
+.profile .phone{
+    top: 410px;
+    left: 470px;
+    text-decoration: underline;
+}
+
+.profile .address{
+    top: 140px;
+    left: 800px;
+    text-decoration: underline;
+}
+
+.profile .city{
+    top: 280px;
+    left: 800px;
+    text-decoration: underline;
+}

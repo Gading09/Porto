@@ -1,0 +1,14 @@
+.FromSeller{
+    border-top: double;
+    margin: 20px;
+    margin-top: 6px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 80px;
+}
+
+.numbercart{
+    padding-left: 70px;
+    margin-bottom: 10px;
+    font-family: 'Muli',cursive;
+}

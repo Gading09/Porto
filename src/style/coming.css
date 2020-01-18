@@ -1,0 +1,44 @@
+body .coming{
+   background-image: url('../image/alam.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.come .soon{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.come .cooldown{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.come hr{
+    margin:auto;
+    width:30%;
+    border-width: 3px;
+    border-color: white;
+    padding-top: 1%;
+}
+
+.come {
+    margin-top: 16.7%;
+    padding-bottom: 16%;
+}
+@media only screen and (max-width: 767px) {
+    body .coming{
+        background-image: url('../image/alam.jpg');
+        background-size: cover;
+    }
+    .come {
+        margin-top: 100.7%;
+        padding-bottom: 100%;
+    }
+}

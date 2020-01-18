@@ -1,0 +1,51 @@
+.home-agent .join-agent{
+    font-size: 3em;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+
+.home-agent img{
+    width: 70%;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.header-buttonn1{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.home-agent hr{
+    border: 1px solid green;
+    width: 30%;
+}
+.home1{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.take-seller{
+    padding-top: 30px;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.home-agent button{
+    margin-top: 15px;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+.checkout_price{
+    margin-top: 30px;
+}
+
+.checkout_price p{
+    color: green;
+    text-align: right;
+    margin-right: 30px;
+    font-size: 26px;
+}

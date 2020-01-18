@@ -1,0 +1,47 @@
+.cart-product{
+    padding-top:40px
+}
+
+.cart-direct{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cart-product .titlecart{
+    padding-left: 70px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Muli', cursive;
+}
+
+.cart-product .total_harga{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.cart-product .total_harga p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 30px;
+    font-family: 'Muli', cursive;
+    color: green;
+    font-weight: 600;
+}
+
+.cart-product .checkout_cart .checkout{
+    margin-left: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.cart-product .checkout_cart .batal{
+    margin-left: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cart-product .checkout_cart{
+    margin-bottom: 30px;
+}
